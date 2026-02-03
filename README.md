@@ -47,3 +47,17 @@ curl -X POST "http://localhost:3221/transcribe?task=translate" \
 docker build -t whisper-service .
 docker run --rm -p 3221:3221 whisper-service
 ```
+
+## 5) Run with batch file
+
+```bash
+.\run_whisper_service.bat
+```
+
+## 6) Tray controller
+
+```bash
+.\run_whisper_tray.bat
+```
+
+The tray app monitors API health and can open health/logs.
