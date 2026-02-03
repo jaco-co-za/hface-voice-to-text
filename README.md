@@ -61,7 +61,7 @@ Linux:
 ./start_on_login.sh
 ```
 
-Both scripts pull latest from `https://github.com/jacowisper/voice-to-text` and run `docker compose up -d --build whisper-service`.
+Both scripts pull latest from `https://github.com/jaco-co-za/hface-voice-to-text.git` and run `docker compose up -d --build whisper-service`.
 
 ## 6) Local non-Docker run (optional)
 

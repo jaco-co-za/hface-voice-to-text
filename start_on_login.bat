@@ -1,7 +1,7 @@
 @echo off
 setlocal
 
-set "REPO_URL=https://github.com/jacowisper/voice-to-text"
+set "REPO_URL=https://github.com/jaco-co-za/hface-voice-to-text.git"
 cd /d "%~dp0"
 
 where git >nul 2>&1
