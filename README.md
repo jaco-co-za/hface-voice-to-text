@@ -44,17 +44,32 @@ curl -X POST "http://localhost:3221/transcribe?task=translate" \
 ## 4) Docker
 
 ```bash
-docker build -t whisper-service .
-docker run --rm -p 3221:3221 whisper-service
+docker compose up -d --build whisper-service
 ```
 
-## 5) Run with batch file
+## 5) Start-on-login scripts (pull latest + run Docker)
+
+Windows:
+
+```bash
+.\start_on_login.bat
+```
+
+Linux:
+
+```bash
+./start_on_login.sh
+```
+
+Both scripts pull latest from `https://github.com/jacowisper/voice-to-text` and run `docker compose up -d --build whisper-service`.
+
+## 6) Local non-Docker run (optional)
 
 ```bash
 .\run_whisper_service.bat
 ```
 
-## 6) Tray controller
+## 7) Tray controller
 
 ```bash
 .\run_whisper_tray.bat
